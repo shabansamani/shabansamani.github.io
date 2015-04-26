@@ -8,15 +8,42 @@
     <!-- STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+    	@media screen and (min-width: 1000px){
+			.vertical-align {
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				-webkit-transform-style: preserve-3d;
+				-webkit-transform: translateY(-50%) translateX(-50%);
+				transform: translateY(-50%) translateX(-50%);
+				margin-bottom: 0px;
+				border-radius: 10px;
+				padding-bottom: 1%;
+			}
+			.jumbotron {
+				min-height: 200px;
+				max-width: 800px;
+			}
+			#footnote {
+				font-size: 12px;
+				text-align: center;
+				opacity: .5;
+			}
+}
+    </style>
 
   </head>
 
   <body>
-	<div class="container">
+	<div class="jumbotron vertical-align">
     	
-  	  	<div class="jumbotron">
+  	  	<div class="container">
   	  		<h1>Shaban K. Samani</h1>
   	  		<p>I'm a self-taught developer pursuing a Bachelors in Computer Science at the University of Georgia</p>
+  	  		<p id="footnote">*My Resume/CV as well as my portfolio will be available shortly</p>
   	  	</div>
     </div>
   </body>
