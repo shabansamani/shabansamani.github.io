@@ -18,7 +18,7 @@ try {
 		'name' => isset($_POST['name']) ? $_POST['name'] : '',
 		'email' => isset($_POST['email']) ? $_POST['email'] : '',
 		'msg' => isset($_POST['msg']) ? $_POST['msg'] : '',
-	);
+	)};
 
 	// data validation
 	foreach ($emailData as $fieldKey => $value) {
