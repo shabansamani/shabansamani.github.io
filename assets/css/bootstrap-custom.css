@@ -1490,6 +1490,16 @@ tbody.collapse.in {
 .affix {
   position: fixed;
 }
+
+/** CUSTOM CSS **/
+#cv {
+  text-decoration: none;
+  color: white;
+}
+#cv > .btn-link:hover {
+  text-decoration: underline;
+}
+
 @-ms-viewport {
   width: device-width;
 }
