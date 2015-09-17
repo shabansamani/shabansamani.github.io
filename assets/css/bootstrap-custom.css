@@ -358,6 +358,12 @@ hr {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.project-tease {
+	text-align: center;
+	margin-top: 15px;
+	
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
