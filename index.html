@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </head>
 
   <body>
@@ -21,9 +22,19 @@
     	 	<p>
           Thanks for visiting my website! It's currently going through a facelift, but if you want to know what I'm up to, check out my GitHub!
         </p>
-        <p class="github"><a href="http://github.com/shabansamani"><i class="fa fa-github"></i></a></p>
+        <p class="github">
+          <a href="http://github.com/shabansamani" target="_blank" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github"></i></a>
+          <a href="mailto:shabansamani@gmail.com?subject=I want to hire you!" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+          <a href="assets/resume/ShabanResume.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Resume"><i class="fa fa-file-text"></i></a>
+	</p>
       </div>
     </div>
+
+    <script type="text/javascript">
+      $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+      });
+    </script>
   </body>
 
 </html>
