@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaban K. Samani</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/csslib/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/csslib/iconmoon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">        
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <p id="intro">Hi, my name is</p>
+		    <h1>Shaban K. Samani</h1>
+    	 	<p>
+          and I'm a Software Developer, Product Designer, and Technology Enthusiast
+        </p>
+      </div>
+    </div>
+    <div id = "about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a 22 year old Full Stack Developer currently finishing my Bachelor's degree in Computer Science at the University of Georgia! Currently, I'm proficient in 3 different stacks and I have an extensive industry experience, as I've worked for small to large companies as well as local startups. I'm currently looking for new opportunities to learn and take me further in my career, be it a job, a side project, or a conversation. If you'd like to learn more about me, <a href="mailto:shabansamani@gmail.com" class="link">send me an email</a>! If you want to know what I've been doing for the last few years, <a href="./assets/resume/ShabansResume.pdf" class="link"target="_blank">check out my resume</a>! If you want to know what I'm currently up to, <a href="github.com/shabansamani" target="_blank">take a look at my GitHub</a>!</p>
+      </div>
+    </div>
+    <div id = "school">
+      <h2>Alma Mater</h2>
+      <h3>University of Georgia</h3>
+      <p>B.S. Computer Science</p>
+      <p>May 2017</p>
+    </div>
+    <div 
+  </body>
+
+</html>

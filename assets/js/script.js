@@ -1,3 +1,5 @@
-$(document).ready(function() {
-  	$('[data-toggle="tooltip"]').tooltip();
-});
+$(document).on('scroll', function() {
+    if($(this).scrollTop()>=$('#about').position().top) {
+        $(".nav").fadeIn(400)
+    }
+})

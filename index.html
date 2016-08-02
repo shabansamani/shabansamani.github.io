@@ -6,35 +6,120 @@
     <title>Shaban K. Samani</title>
 
     <link rel="stylesheet" type="text/css" href="assets/csslib/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="assets/csslib/iconmoon.css">
+    <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">        
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </head>
 
   <body>
+    <nav class="nav navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Shaban K. Samani</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#school">Alma Mater</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <li><a href="#about">About Me</a></li>
+      <li><a href="#school">Alma Mater</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li> -->
+    </nav>
     <div class="jumbotron">
       <div class="container">
+        <p id="intro">Hi, my name is</p>
 		    <h1>Shaban K. Samani</h1>
     	 	<p>
-          Thanks for visiting my website! It's currently going through a facelift, but if you want to know what I'm up to, check out my GitHub!
+          and I'm a Software Developer, Product Designer, and Technology Enthusiast
         </p>
-        <p class="github">
-          <a href="http://github.com/shabansamani" target="_blank" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github"></i></a>
-          <a href="mailto:shabansamani@gmail.com?subject=I want to hire you!" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
-          <a href="assets/resume/ShabanResume.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Resume"><i class="fa fa-file-text"></i></a>
-	</p>
+        <img src="./assets/images/Thumbnail.png" id="thumbnail">
       </div>
     </div>
-
-    <script type="text/javascript">
-      $(function () {
-        $("[data-toggle='tooltip']").tooltip();
-      });
-    </script>
+    <div id = "about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a 22 year old Full Stack Developer currently finishing my Bachelor's degree in Computer Science at the University of Georgia! Currently, I'm proficient in 3 different stacks and I have an extensive industry experience, as I've worked for small to large companies as well as local startups. I'm currently looking for new opportunities to learn and take me further in my career, be it a job, a side project, or a conversation. If you'd like to learn more about me, <a href="mailto:shabansamani@gmail.com" class="link">send me an email</a>! If you want to know what I've been doing for the last few years, <a href="./assets/resume/ShabansResume.pdf" class="link"target="_blank">check out my resume</a>! If you want to know what I'm currently up to, <a href="github.com/shabansamani" target="_blank">take a look at my GitHub</a>!</p>
+      </div>
+    </div>
+    <div id = "school">
+      <h2>Alma Mater</h2>
+      <h3>University of Georgia</h3>
+      <p>B.S. Computer Science</p>
+      <p id="degree_details"><em>Emphasis in Software Design and Computer Systems</em></p>
+      <p>May 2017</p>
+    </div>
+    <div id = "projects">
+      <div class="container">
+        <h2>Projects I've Done</h2>
+        <div class="col-md-4 projItem">
+          <h3>Sklopi.me</h3>
+          <img src="http://placehold.it/250x250">
+          <p class="hover">I'm currently working on this side project,
+            which is a web app built with a React/Redux boilerplate with
+            Node.js on the backend providing users an interactive
+            and easy-to-use experience when deciding on which particular 
+            computer to buy.</p>
+        </div>
+        <div class="col-md-4 projItem">
+          <h3>BATSHELL</h3>
+          <img src="http://placehold.it/250x250">
+          <p class="hover">What started off as a class project to 
+            make a basic shell from scratch, led me to take it a little 
+            further and turn it into Batman with special functionality
+            that mirrors that of the caped crusader using C/C++.</p>
+        </div>
+        <div class="col-md-4 projItem">
+          <h3>Cobot Robot</h3>
+          <img src="http://placehold.it/250x250">
+          <p class="hover">During my tenure as a Software Developer Intern
+            for The Coca-Cola Company, I was tasked to program the first
+            automated movement for the Coca-Cola robot, also known as 'Cobot'
+            using Python and ROS libraries</p>
+        </div>
+        <div class="col-md-6 projItem">
+          <h3>Sigma Beta Rho Nu Chapter Website</h3>
+          <img src="http://placehold.it/250x250">
+          <p class="hover">As Vice President of Operations and Marketing Chairman,
+            I was tasked with rebuilding and rebranding the website for Sigma Beta 
+            Rho Multicultural Fraternity, Inc., with a stack based on Nginx 
+            and Django persisting to a SQLite instance</p>
+        </div>
+        <div class="col-md-6 projItem">
+          <h3>UGAHacks Website</h3>
+          <img src="http://placehold.it/250x250">
+          <p class="hover">I built the website for UGAHacks, the premier,
+            student-run hackathon at the University of Georgia for its
+            inaugural year, from the ground-up using Ruby on Rails and 
+            React.js for package control.</p>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <form></form>
+    </div>
+    <footer>
+      <div class="container">
+        <p></p>
+        <p>&copy; Shaban K. Samani 2016</p>
+      </div>
+    </footer>
   </body>
 
 </html>
