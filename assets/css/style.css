@@ -21,7 +21,22 @@ h1 {
 	font-size: 16px; 
 }
 */
+.navbar-inverse {
+	opacity: 50%;
+	background-color:#373A3C; 
+}
+.navbar-brand {
+	text-decoration: none;
+}
+.navbar-brand:hover {
+	text-decoration: none;
+}
+
 nav li a {
+	text-decoration: none;
+}
+
+nav li a:hover {
 	text-decoration: none;
 }
 
@@ -37,7 +52,7 @@ nav li a {
 	position: relative
 	height: 250px;
 	width: 250px;
-	margin-top: -200px;
+	margin-top: -175px;
 }
 
 /*.container {
@@ -109,6 +124,9 @@ a {
 
 #projects .projItem p {
 	font-size: 14px;
+}
+.hover {
+	display: none;
 }
 
 footer {
