@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">      
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
@@ -21,6 +22,7 @@
   </head>
 
   <body>
+    <a href="javascript:" id="scroll-to-top"><i class="icon-chevron-up"></i></a>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -50,19 +52,52 @@
       <div class="container">
         <p id="intro">Hi, my name is</p>
 		    <h1>Shaban K. Samani</h1>
-    	 	<p>
+    	 	<p id="tagline">
           and I'm a Software Developer, Product Designer, and Technology Enthusiast
         </p>
         <img src="./assets/images/Thumbnail.png" id="thumbnail">
       </div>
     </div>
     <div id = "about">
-      <div class="container">
+      <div class="container" id="desktop-desc">
         <h2>About Me</h2>
-        <p>I'm a 22 year old Full Stack Developer currently finishing my Bachelor's degree in Computer Science at the University of Georgia! Currently, I'm proficient in 3 different stacks and I have an extensive industry experience, as I've worked for small to large companies as well as local startups. I'm currently looking for new opportunities to learn and take me further in my career, be it a job, a side project, or a conversation. If you'd like to learn more about me, <a href="mailto:shabansamani@gmail.com" class="link">send me an email</a>! If you want to know what I've been doing for the last few years, <a href="./assets/resume/ShabansResume.pdf" class="link"target="_blank">check out my resume</a>! If you want to know what I'm currently up to, <a href="github.com/shabansamani" target="_blank">take a look at my GitHub</a>!</p>
+        <p>I'm a 22 year old Full Stack Developer currently finishing my Bachelor's degree in Computer Science at the University of Georgia! Currently, I'm proficient in 3 different stacks and I have an extensive industry experience, as I've worked for small to large companies as well as local startups. I'm currently looking for new opportunities to learn and take me further in my career, be it a job, a side project, or a conversation. Feel free to look around! If you like what you see, let's <a href="mailto:shabansamani@gmail.com">talk</a>!</p>
+      </div>
+      <div class="container" id="mobile-desc">
+        <h2>About Me</h2>
+        <p>Since you're seeing this on mobile, I'll keep it short & sweet – I'm a student at UGA with years of industry experience under my belt; I'm proficient in 3 different technology stacks; and I'm currently seeking new opportunities!
+      </div>
+    </div>
+    <div id="skills">
+      <div class="container">
+        <h2>Skillset</h2>
+        <ul><em>Programming Languages</em>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C/C++</li>
+          <li>C#</li>
+        </ul>
+        <ul><em>Frameworks/Libraries</em>
+          <li>ASP.NET</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>Ruby on Rails</li>
+          <li>MEAN Stack</li>
+          <li>ROS</li>
+        </ul>
       </div>
     </div>
     <div id = "school">
+      <h2>Alma Mater</h2>
+      <h3>University of Georgia</h3>
+      <p>B.S. Computer Science</p>
+      <p id="degree_details"><em>Emphasis in Software Design and Computer Systems</em></p>
+      <p>May 2017</p>
+    </div>
+    <!-- <div id = "school">
       <h2>Alma Mater</h2>
       <h3>University of Georgia</h3>
       <p>B.S. Computer Science</p>
@@ -99,15 +134,15 @@
         </div>
       </div>
       <div class="container">
-        <div class="col-md-4 projItem">
-          <h3>Fraternity Chapter Website</h3>
+        <div class="col-md-3 projItem">
+          <h3>Fraternity Website</h3>
           <img src="http://placehold.it/250x250">
           <p class="hover">As Vice President of Operations and Marketing Chairman,
             I was tasked with rebuilding and rebranding the website for Sigma Beta 
             Rho Fraternity, Inc., with a stack based on Nginx 
             and Django persisting to a SQLite instance</p>
         </div>
-        <div class="col-md-4 projItem">
+        <div class="col-md-3 col-sm-1 projItem">
           <h3>UGAHacks Website</h3>
           <img src="http://placehold.it/250x250">
           <p class="hover">I built the website for UGAHacks, the premier,
@@ -121,7 +156,7 @@
           <p class="hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <div class="container">
         <p></p>

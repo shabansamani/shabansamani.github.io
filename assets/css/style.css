@@ -1,12 +1,49 @@
-
-
 * {
 /*	border: 1px solid black; */
-	font: 'Helvetica Nue', 'Open Sans', sans-serif;
 }
 
 body {
-	font: serif, 'Helvetica';
+	font: 'Helvetica Nue', 'Open Sans', sans-serif;
+}
+
+#scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgba(0,0,0,0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#scroll-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#scroll-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#scroll-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 
 h1 {
@@ -22,8 +59,8 @@ h1 {
 }
 */
 .navbar-inverse {
-	opacity: 50%;
-	background-color:#373A3C; 
+	background-color:#222222;
+	background-image: none; 
 }
 .navbar-brand {
 	text-decoration: none;
@@ -46,6 +83,25 @@ nav li a:hover {
 	padding: 100px 0px;
 }
 
+@media (max-width: 991px) {
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+	.jumbotron #tagline {
+		width: 50%;
+	}
+}
+
+@media (max-width: 600px) {
+	.jumbotron {
+		text-align: center;
+	}
+
+	.jumbotron #tagline {
+		width: 100%;
+	}
+}
+
 #thumbnail {
 	display: inline-block;
 	float: right;
@@ -55,13 +111,23 @@ nav li a:hover {
 	margin-top: -175px;
 }
 
+@media screen and (max-width: 600px) {
+	#thumbnail {
+		display: block;
+		float: none;
+		margin-top: 50px;
+		margin: 0 auto;
+
+	}
+}
+
 /*.container {
 	display: inline-block;
 }*/
 
 #about {
 	margin-top: -50px;
-	padding: 350px 0px;
+	padding: 350px 100px;
 	color: #ffffff;
 	text-align: right;
 	background:linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/athens.jpg');
@@ -76,13 +142,71 @@ p {
 	font-size: 18px;
 }
 
-a {
+#about a {
 	text-decoration: underline;
-	font-weight: bold;
+	font-style: italic;
 	color: #ffffff;
 }
 #about a:hover {
 	color: #1D7776;
+}
+
+@media screen and (min-width: 400px) {
+	#about {
+		text-align: center;
+	}
+	#desktop-desc {
+		display: none;
+	}
+	#mobile-desc {
+		display: initial;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#desktop-desc {
+		display: initial;
+	}
+	#mobile-desc {
+		display: none;
+	}
+}
+
+#skills {
+	padding: 150px 0px;
+	align-content: center;
+	text-align: center;
+}
+
+#skills .container {
+}
+
+#skills .container ul {
+	display: inline-table;
+	list-style: none;
+}
+
+@media screen and (min-width: 400px) {
+	#skills .container ul {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#skills .container ul {
+		display: inline-table;
+	}
+}
+
+
+
+#skills .container ul em {
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+#skills .container ul li {
+	font-size: 20px;
 }
 
 #school {
