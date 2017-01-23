@@ -199,6 +199,13 @@ p {
 }
 
 
+#skills {
+	margin-top: -50px;
+	padding: 350px 0px;
+	color: #ffffff;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/source-code-583537_1280.jpg');
+	background-size: cover;
+}
 
 #skills .container ul em {
 	font-size: 28px;
@@ -260,4 +267,5 @@ footer {
 }
 
 footer p {
+	font-size: 16px;
 }
