@@ -1,9 +1,6 @@
-* {
-/*	border: 1px solid black; */
-}
-
 body {
 	font: 'Helvetica Nue', 'Open Sans', sans-serif;
+	background-color:#222222;
 }
 
 #scroll-to-top {
@@ -105,7 +102,7 @@ nav li a:hover {
 #thumbnail {
 	display: inline-block;
 	float: right;
-	position: relative
+	position: relative;
 	height: 250px;
 	width: 250px;
 	margin-top: -175px;
@@ -242,6 +239,114 @@ p {
 	font-size: 14px;
 }
 
+#cv {
+	margin-top: -50px;
+	padding: 150px 100px;
+	color: #ffffff;
+}
+
+
+
+#timeline {
+	position: relative;
+	overflow: auto;
+	color: #FFFFFF;
+}
+
+#timeline:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 5px;
+	background: #661D1E;
+}
+
+#timeline h2 {
+	background-color: #661D1E;
+	font-size: 40px;
+	max-width: 8em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5em;
+	text-align: center;
+	position: relative;
+	clear: both;
+}
+
+
+#cv #timeline ul {
+	list-style: none;
+	padding: 0 0 0 1em;
+	z-index: 1;
+}
+
+.cv-item {
+	background: #661D1E;
+	padding: 1em;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.cv-item:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 1em solid #661D1E;
+	border-left: 1em solid transparent;
+	position: absolute;
+	left: -1em;
+	top: 0;
+}
+.cv-item h3 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.cv-item p {
+	font-size: 16px;
+}
+
+.cv-item time {
+	font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+  #cv {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #timeline:before {
+    left: 50%;
+  }
+  #timeline ul {
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    list-style: none;
+  }
+  #timeline li {
+    width: 42%;
+  }
+  #timeline li:nth-child(even) {
+    float: right;
+    margin-top: 2em;
+  }
+  #timeline li:nth-child(odd) {
+    float: left;
+  }
+  #timeline li:nth-child(odd):before {
+    border-top: 1em solid #661D1E;
+    border-right: 1em solid transparent;
+    right: -1em;
+    left: auto;
+  }
+  #timeline li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+
 #projects {
 	color: #ffffff;
 	background-color: #1D7776; 
@@ -260,7 +365,14 @@ p {
 	display: none;
 }
 
+#placeholder > .container > h2 {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 40px;
+}
+
 footer {
+	width: 100%;
 	text-align: center;
 	background-color: #A9A9A6;
 	height: 50px;
