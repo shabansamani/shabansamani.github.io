@@ -200,7 +200,7 @@ p {
 	margin-top: -50px;
 	padding: 350px 0px;
 	color: #ffffff;
-	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/source-code-583537_1280.jpg');
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Bubs.png');
 	background-size: cover;
 }
 
@@ -211,6 +211,7 @@ p {
 
 #skills .container ul li {
 	font-size: 20px;
+	margin: 10px;
 }
 
 #school {
@@ -241,7 +242,7 @@ p {
 
 #cv {
 	margin-top: -50px;
-	padding: 150px 100px;
+	padding: 50px 100px;
 	color: #ffffff;
 }
 
@@ -263,7 +264,7 @@ p {
 
 #timeline h2 {
 	background-color: #661D1E;
-	font-size: 40px;
+	font-size: 32px;
 	max-width: 8em;
 	margin-top: 0;
 	margin-left: auto;
@@ -372,6 +373,7 @@ p {
 }
 
 footer {
+    position: absolute;
 	width: 100%;
 	text-align: center;
 	background-color: #A9A9A6;
